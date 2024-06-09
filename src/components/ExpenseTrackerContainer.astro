@@ -7,7 +7,7 @@ import Button from "./Button.astro"
 
 <div class="container expense-tracker-container">
     <div>
-        <Label className="label total-budget-amount-label" id="total_budget_amount_label" forLabel="total_budget_amount" labelText="Budget">
+        <label for="total_budget_amount">Total Budget</label>
         <Input className="total-budget-amount" id="total_budget_amount" placeholder="Enter monthly budget">
     </div>
     <div>
@@ -22,8 +22,8 @@ import Button from "./Button.astro"
         flex-direction: column;
         justify-content: center;
         align-items: left;
+        gap: 30px;
         padding: 40px;
-        gap: 20px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -38,5 +38,6 @@ import Button from "./Button.astro"
     label
     {
         display: block;
+        margin-bottom: 5px;
     }
 </style>
