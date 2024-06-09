@@ -2,13 +2,14 @@
 const {className, id, buttonText} = Astro.props
 ---
 
-<button className={className} id={id}>
+<button class={className} id={id}>
     {buttonText}
 </button>
 
 <style>
     button
     {
+        display: block;
         font-family: inherit;
         height: 50px;
         width: fit-content;

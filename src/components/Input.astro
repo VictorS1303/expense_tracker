@@ -2,18 +2,21 @@
 const {type, className, id, placeholder} = Astro.props
 ---
 
-<input type={type} className={className} id={id} placeholder={placeholder}>
+<div>
+    <input type={type} class={className} id={id} placeholder={placeholder}>
+</div>
 
 <style>
     input
     {
+        display: block;
         font-family: inherit;
         border: 2px solid #d4d4d4;
         padding: 10px 15px;
         color: var(--secondary-text-color);
         width: 200px;
         border-radius: calc(var(--base-border-radius) / 2);
-        transition: box-shadow .2s ease-in;
+        transition: box-shadow .2s ease-in; 
     }
 
     input:focus

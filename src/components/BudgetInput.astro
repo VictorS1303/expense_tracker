@@ -1,0 +1,10 @@
+---
+import BudgetAndExpensesContainer from './BudgetAndExpensesContainer.astro'
+import Input from './Input.astro'
+import Button from './Button.astro'
+---
+
+<BudgetAndExpensesContainer className="budget-input" id="budget_input">
+    <Input className="total-budget-amount" id="total_budget_amount" placeholder="Enter monthly budget">
+    <Button className="btn confirm-budget-btn" id="confirm_budget_btn" buttonText="Set Budget"></Button>
+</BudgetAndExpensesContainer>
