@@ -1,12 +1,13 @@
 ---
 import BudgetAndExpensesContainer from "./BudgetAndExpensesContainer.astro"
+import Label from "./Label.astro"
 import Input from "./Input.astro"
 import Button from "./Button.astro"
 ---
 
 <div class="container expense-tracker-container">
     <div>
-        <label for="total_budget_amount">Budget</label>
+        <Label className="label total-budget-amount-label" id="total_budget_amount_label" forLabel="total_budget_amount" labelText="Budget">
         <Input className="total-budget-amount" id="total_budget_amount" placeholder="Enter monthly budget">
     </div>
     <div>
