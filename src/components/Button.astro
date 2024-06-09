@@ -2,7 +2,7 @@
 const {className, id, buttonText} = Astro.props
 ---
 
-<button className={className} id={id}>
+<button class={className} id={id}>
     {buttonText}
 </button>
 
@@ -11,6 +11,7 @@ const {className, id, buttonText} = Astro.props
     {
         font-family: inherit;
         height: 50px;
+        white-space: nowrap;
         width: fit-content;
         color: var(--primary-text-color);
         font-size: 15px;
