@@ -1,0 +1,18 @@
+---
+const {id} = Astro.props
+---
+
+<div class="container budget-and-expenses-container" id={id}>
+  <slot/>
+</div>
+
+<style>
+    .budget-and-expenses-container
+    {
+        height: 250px;
+        width: 350px;
+        background-color: var(--budget-input-container-background-color);
+        box-shadow: var(--box-shadow);
+        border-radius: var(--base-border-radius);
+    }
+</style>
