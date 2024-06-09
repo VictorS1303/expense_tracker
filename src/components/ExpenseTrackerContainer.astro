@@ -1,0 +1,41 @@
+---
+import BudgetAndExpensesContainer from "./BudgetAndExpensesContainer.astro"
+import Input from "./Input.astro"
+import Button from "./Button.astro"
+---
+
+<div class="container expense-tracker-container">
+    <div>
+        <label for="total_budget_amount">Budget</label>
+        <Input className="total-budget-amount" id="total_budget_amount" placeholder="Enter monthly budget">
+    </div>
+    <div>
+        <Button className="btn confirm-budget-btn" id="confirm_budget_btn" buttonText="Set Budget"></Button>
+    </div>
+</div>
+
+<style>
+    .expense-tracker-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 40px;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        minheight: 250px;
+        width: 350px;
+        border-radius: var(--base-border-radius);
+        background-color: var(--budget-input-container-background-color);
+        box-shadow: var(--box-shadow);
+    }
+
+    label
+    {
+        display: block;
+    }
+</style>
